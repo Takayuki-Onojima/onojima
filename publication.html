@@ -1,217 +1,264 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Takayuki Onojima</title>
-    <!--
-    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-    -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/open-fonts@1.1.1/fonts/inter.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <title>Takayuki Onojima | Publications</title>
+
+    <link rel="stylesheet" href="mypage.css">
+    <script>try{var l=localStorage.getItem('onojima-lang');if(l==='en'||l==='ja'){document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l);}}catch(e){}</script>
 </head>
-	
-</body>
-<header>
-    <h1>小野島 隆之</h1>
-    博士（情報）<br>
-    滋賀大学 データサイエンス・AIイノベーション研究推進センター 講師<br>
-    <br>
+
+<body>
+<div class="layout">
+
+<aside class="sidebar">
+    <div class="brand-name"><span class="lang-ja">小野島 隆之</span><span class="lang-en">Takayuki Onojima</span></div>
+    <div class="brand-role">
+        <span class="lang-ja">滋賀大学<br>講師</span>
+        <span class="lang-en">Shiga University<br>Lecturer</span>
+    </div>
     <nav>
-        <a href="index.html">Home</a> /
-        <a href="research.html">研究分野</a> /
-        <a href="publication.html">論文・発表</a> /
+        <a href="index.html"><span class="lang-ja">概要</span><span class="lang-en">About</span></a>
+        <a href="research.html"><span class="lang-ja">研究資金・共同研究</span><span class="lang-en">Research &amp; Funding</span></a>
+        <a href="teaching.html"><span class="lang-ja">教育・社会貢献</span><span class="lang-en">Teaching &amp; Outreach</span></a>
+        <a href="publication.html" class="current"><span class="lang-ja">論文・発表</span><span class="lang-en">Publications</span></a>
     </nav>
-    <br>
-    <div align="right"><a href="publication_eng.html">English</a></div>
-</header>
-	
-<h2>査読付き学術論文</h2>
-<ul>
-  <li>
-    小野島 隆之，神保 雅一（2026）．<br>
-    脳波位相と正答確率の関数推定に向けたロジット変換を用いたガウス過程回帰．<br>
-    <i>統計数理</i>（in press）
-  </li>
-  <li>
-    Takayuki Onojima, Keiichi Kitajo（2026）．<br>
-    High-resolution EEG dataset during resting and localized visual stimulation in the lower-left visual field．<br>
-    <i>Data in Brief</i>, 64C, 112400
-  </li>
-  <li>
-    Takayuki Onojima, Keiichi Kitajo（2021）．<br>
-    A state-informed stimulation approach with real-time estimation of the instantaneous phase of neural oscillations by a Kalman filter．<br>
-    <i>Journal of Neural Engineering</i>, 18(3), 066001
-  </li>
-  <li>
-    Aqsa Shakeel, Takayuki Onojima，Toshihisa Tanaka，Keiichi Kitajo（2021）．<br>
-    Real-time implementation of EEG oscillatory phase-informed visual stimulation using a least mean square-based AR model．<br>
-    <i>Journal of Personalized Medicine</i>, 11(1), 38
-  </li>
-  <li>
-    Takayuki Onojima，Takahiro Goto，Hiroaki Mizuhara，Toshio Aoyagi（2018）．<br>
-    A dynamical systems approach for estimating phase interactions between rhythms of different frequencies from experimental data．<br>
-    <i>PLOS Computational Biology</i>, 14(1), e1005928
-  </li>
-  <li>
-    Takayuki Onojima，Keiichi Kitajo，Hiroaki Mizuhara（2017）．<br>
-    Ongoing slow oscillatory phase modulates speech intelligibility in cooperation with motor cortical activity．<br>
-    <i>PLOS ONE</i>, 12(8), e0183146
-  </li>
-</ul>
+    <div class="langswitch">
+        <button type="button" data-set-lang="ja" aria-pressed="true">日本語</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    </div>
+</aside>
 
-<h2>Preprint</h2>
-<ul>
-  <li>
-    Takayuki Onojima，Takashi Imai（2026）．<br>
-    Direct prediction of the complex-valued analytic signal of EEG from raw multichannel data．<br>
-    <i>bioRxiv</i>, doi:10.1101/2024.05.13.593119
-  </li>
-</ul>
-	
+<main>
+    <h1><span class="lang-ja">論文・発表</span><span class="lang-en">Publications</span></h1>
+    <p class="note"><sup>*</sup><span class="lang-ja"> 責任著者</span><span class="lang-en"> Corresponding author</span></p>
+
+    <h2>Preprint</h2>
+    <ul>
+        <li>
+            <u>Takayuki Onojima</u><sup>*</sup>, Takashi Imai.<br>
+            Direct prediction of the complex-valued analytic signal of EEG from raw multichannel data.<br>
+            <i>bioRxiv</i>, doi:<a href="https://doi.org/10.1101/2024.05.13.593119">10.1101/2024.05.13.593119</a>
+        </li>
+    </ul>
+
+    <h2>Journal papers</h2>
+    <ul>
+        <li>
+            Kazumasa Watanabe, Satoshi Shimokawa, Koji Iwayama, <u>Takayuki Onojima</u>, Hiroaki Tashiro, Hirotaka Ueno, Takahiro Mochihara, Takanori Nukada (2026).<br>
+            Development of a surrogate model for differential case ring gear bolt loosening by integrating shape-generative AI and physical principles (in Japanese).<br>
+            <i>Transactions of Society of Automotive Engineers of Japan</i>, 57(4), 693-698
+        </li>
+        <li>
+            <u>Takayuki Onojima</u><sup>*</sup>, Masakazu Jimbo (2026).<br>
+            Gaussian Process Regression with a Logit Link to Estimate the Relationship between Neural Oscillatory Phase and the Probability of a Correct Response (in Japanese).<br>
+            <i>Proceedings of the Institute of Statistical Mathematics</i>, 74(1), 61-80<span class="lang-ja">, <a href="https://www.ism.ac.jp/editsec/toukei/pdf/74-1-061.pdf">全文PDF</a></span><span class="lang-en">, <a href="https://www.ism.ac.jp/editsec/toukei/pdf/74-1-061.pdf">full text (PDF)</a></span>
+        </li>
+        <li>
+            <u>Takayuki Onojima</u><sup>*</sup>, Keiichi Kitajo (2026).<br>
+            High-resolution EEG dataset during resting and localized visual stimulation in the lower-left visual field.<br>
+            <i>Data in Brief</i>, 64C, 112400, doi:<a href="https://doi.org/10.1016/j.dib.2025.112400">10.1016/j.dib.2025.112400</a>
+        </li>
+        <li>
+            <u>Takayuki Onojima</u><sup>*</sup>, Keiichi Kitajo<sup>*</sup> (2021).<br>
+            A state-informed stimulation approach with real-time estimation of the instantaneous phase of neural oscillations by a Kalman filter.<br>
+            <i>Journal of Neural Engineering</i>, 18(6), 066001, doi:<a href="https://doi.org/10.1088/1741-2552/ac2f7b">10.1088/1741-2552/ac2f7b</a>
+        </li>
+        <li>
+            Aqsa Shakeel, <u>Takayuki Onojima</u>, Toshihisa Tanaka, Keiichi Kitajo<sup>*</sup> (2021).<br>
+            Real-time implementation of EEG oscillatory phase-informed visual stimulation using a least mean square-based AR model.<br>
+            <i>Journal of Personalized Medicine</i>, 11(1), 38
+        </li>
+        <li>
+            <u>Takayuki Onojima</u><sup>*</sup>, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi<sup>*</sup> (2018).<br>
+            A dynamical systems approach for estimating phase interactions between rhythms of different frequencies from experimental data.<br>
+            <i>PLOS Computational Biology</i>, 14(1), e1005928, doi:<a href="https://doi.org/10.1371/journal.pcbi.1005928">10.1371/journal.pcbi.1005928</a>
+        </li>
+        <li>
+            <u>Takayuki Onojima</u><sup>*</sup>, Keiichi Kitajo, Hiroaki Mizuhara<sup>*</sup> (2017).<br>
+            Ongoing slow oscillatory phase modulates speech intelligibility in cooperation with motor cortical activity.<br>
+            <i>PLOS ONE</i>, 12(8), e0183146, doi:<a href="https://doi.org/10.1371/journal.pone.0183146">10.1371/journal.pone.0183146</a>
+        </li>
+    </ul>
+
     <h2>Proceedings</h2>
-                <ul>
-		   <li>
-                    <u>小野島 隆之</u>, 今井 貴史(2024).<br>&nbsp;
-                    深層学習を用いた脳波の解析信号の予測.<br>&nbsp;
-                    情報処理学会研究報告, 2024-HCI-207, 44, 1-6</a>.<br>	
-                    <br>
-			
-		   <li>
-                    <u>小野島 隆之</u>, 今井 貴史(2023).<br>&nbsp;
-                    グラフ深層学習による脳波状態の推定.<br>&nbsp;
-                    情報処理学会研究報告, 2023-HCI-202, 46, 1-7</a>.<br>	
-                    <br>
-	          <li>
-                    <u>小野島 隆之</u>, 太田 絵一郎, 後藤 貴宏, 水原 啓暁, 青柳 富誌生 (2015).<br>&nbsp;
-                    脳波データにおける位相振動子ネットワークの推定.<br>&nbsp;
-                    電子情報通信学会技術研究報告, 115(300), CCS2015-47, 11-15</a>.<br>	
-                    <br>
-                  <li>
-                    <u>小野島 隆之</u>, 北城 圭一, 水原 啓暁 (2013).<br>&nbsp;
-                    音声聴取前後の脳波位相関係により促進される音声コミュニケーション.<br>&nbsp;			
-                    電子情報通信学会技術研究報告, 113(315), NC2013-50, 23-28</a>.<br>
-                    <br>	
-                  <li>
-                    山岸 嘉彦, <u>小野島 隆之</u>, 五十嵐 吉輝, 西川 郁子, 加沢 知毅, 並木 重宏, 池野 英利, 神崎 亮平 (2012).<br>&nbsp;
-                    昆虫脳における生理応答データに基づく行動司令生成時の情報伝達経路の推定.<br>&nbsp;
-                    電子情報通信学会技術研究報告, 112(168), NC2012-26, 65-70</a>.<br>
-                    <br>	
-                  <li>
-                    西川 郁子, <u>小野島 隆之</u>, 加沢 知毅, 並木 重宏, 池野 英利, 神崎 亮平 (2011).<br> &nbsp;
-                    昆虫脳における運動司令生成のための神経回路の推定.<br>&nbsp;
-                    電子情報通信学会技術研究報告, 111(368), NC2011-95, 65-68</a>.<br>
-                    <br>
-                </ul>
-    
-    <h2>Poster & Oral presentation(international)</h2>
-          <ul>
-              <li>
-                <u>Takayuki Onojima</u>, Keiichi Kitajo,<br>&nbsp;
-                 "A Kalman filter-based method for closed-loop EEG phase-dependent visual stimulation",<br>&nbsp;
-                The 44th Anual Meeting of the Japan Neuroscience Society The 1st CJK international Meeting, Kobe Conventional Center, Kobe, Japan, 2021/7/30 (poster)<br>
-              <li>
-                <u>Takayuki Onojima</u>, Yuka Okazaki, Keiichi Kitajo,<br>&nbsp;
-                 "A model-based approach to estimating phase response curves of TMS modulated EEG oscillations",<br>&nbsp;
-                Annual Meeting of the Organization for Human Brain Mapping, Auditorium Parco Della Musica, Rome, Italy, 2019/6/10 (poster)<br>
-              <li>
-                <u>Takayuki Onojima</u>, Yuka Okazaki, Keiichi Kitajo,<br>&nbsp;
-                "A manipulative approach to the phase response function of EEG oscillations by transcranial magnetic stimulation",<br>&nbsp;
-                3rd International Brain Stimulation Conference, Vancouver Convention Centre, Vancouver, Canada, 2019/2/25 (poster)<br>
-              <li>
-                <u>Takayuki Onojima</u>, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi,<br>&nbsp;
-                "Estimating for phase interaction between rhythms of different frequency based on phase oscillator model",<br>&nbsp;
-               The 40th Annual Meeting of the Japan Neuroscience Society, Makuhari Messe, Inc., Chiba, Japan, 2017/7/22 (poster)<br>
-              <li>
-                <u>Takayuki Onojima</u>,  Kaiichiro Ota, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi,<br>&nbsp;
-                "Estimation of multi-frequency coupling among neural oscillations",<br>&nbsp;
-                Cell symposia Engineering the brain, The Drake Hotel Chicago, Chicago, USA, 2015/10/15 (poster)<br>
-               <li>
-                <u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara,<br>&nbsp;
-                "Ongoing EEG manipulates the predictive attention to speech",<br>&nbsp;
-                The 24th Annual Conference of the Japanese Neural Network Society, Future University Hakodate, Hakodate, Japan, 2014/8/2 (oral&poster)<br>
-              <li>
-                <u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara,<br>&nbsp;
-                "Ongoing EEG phase enhances the intelligibility of vocal communication: a simultaneous fMRI-EEG study"<br>&nbsp
-                The 20th Annual Meeting of the Organization for Human Brain Mapping, CCH-Congress Center Hamburg, Hamburg, Germany, 2014/6/11 (poster)<br>
-              <li>
-                  <u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara,<br>&nbsp;
-                "Intelligibility of speech perception depends on the pre-stimulus oscillatory phase",<br>&nbsp;
-                Neural Oscillation Conference 2013, NINS Okazaki Conference Center, Okazaki, 2013/7/18 (poster)<br>
-          </ul>
+    <ul>
+        <li>
+            Kazumasa Watanabe, Satoshi Shimokawa, Koji Iwayama, <u>Takayuki Onojima</u>, Hiroaki Tashiro, Hirotaka Ueno, Takahiro Mochihara (2025).<br>
+            Development of a surrogate model for differential case ring gear bolt loosening by integrating shape-generative AI and physical principles.<br>
+            <i>Proceedings of the JSAE Annual Congress</i>, 20256207 (No.129-25)
+        </li>
+        <li>
+            Satoshi Shimokawa, Koji Matsumoto, Mitsunori Uemura, Koji Iwayama, <u>Takayuki Onojima</u>, Takashi Imai (2025).<br>
+            Shape-generative AI accounting for thermal diffusion using PINN and CVAE.<br>
+            <i>Proceedings of the Annual Conference of JSAI</i>, JSAI2025(39), 4F1OS30a04
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Takashi Imai (2024).<br>
+            Deep neural network-based estimation of analytic signals for neural oscillations.<br>
+            <i>IPSJ SIG Technical Reports</i>, 2024-HCI-207, 44, 1-6
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Takashi Imai (2023).<br>
+            Graph deep learning for estimating the state of neural oscillations.<br>
+            <i>IPSJ SIG Technical Reports</i>, 2023-HCI-202, 46, 1-7
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Kaiichiro Ota, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi (2015).<br>
+            Estimation of phase oscillator network for EEG data.<br>
+            <i>IEICE Technical Report</i>, 115(300), CCS2015-47, 11-15
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara (2013).<br>
+            Interplay of pre- and post-stimulus EEG phase enhances human vocal communication.<br>
+            <i>IEICE Technical Report</i>, 113(315), NC2013-50, 23-28
+        </li>
+        <li>
+            Yoshihiko Yamagishi, <u>Takayuki Onojima</u>, Yoshiki Igarashi, Ikuko Nishikawa, Tomoki Kazawa, Shigehiro Namiki, Hidetoshi Ikeno, Ryohei Kanzaki (2012).<br>
+            Estimation of the information pathway for a motor command generation in an insect brain based on the physiological response data.<br>
+            <i>IEICE Technical Report</i>, 112(168), NC2012-26, 65-70
+        </li>
+        <li>
+            Ikuko Nishikawa, <u>Takayuki Onojima</u>, Tomoki Kazawa, Shigehiro Namiki, Hidetoshi Ikeno, Ryohei Kanzaki (2011).<br>
+            Estimation of the neural circuit for the command generation in an insect brain.<br>
+            <i>IEICE Technical Report</i>, 111(368), NC2011-95, 65-68
+        </li>
+    </ul>
 
-    <h2>Poster & Oral presentation (domestic)</h2>
-          <ul>
-	    <li>
-            <u>小野島 隆之</u>,今井 貴史,<br>&nbsp;
-                "深層学習を用いた脳波の解析信号の予測",<br>&nbsp;
-                情報処理学会 ヒューマンコンピュータインタラクション研究会 2024/3/13 (oral)<br>
-		    
-	    <li>
-            <u>小野島 隆之</u>,<br>&nbsp;
-                "音声と脳波間の同期現象",<br>&nbsp;
-                2023年度統計関連学会連合大会 2024/9/4 (oral & 招待有り)<br>
-		    
-	    <li>
-            <u>小野島 隆之</u>,今井 貴史,<br>&nbsp;
-                "グラフ深層学習による脳波状態の推定",<br>&nbsp;
-                情報処理学会 ヒューマンコンピュータインタラクション研究会 2023/3/15 (oral)<br>
-            <li>
-            <u>小野島 隆之</u>,北城 圭一,<br>&nbsp;
-                "カルマンフィルタによる脳波瞬時位相の予測",<br>&nbsp;
-                生理学研究所研究会　第2回 力学系の視点からの脳・神経回路の理解 2020/11/26 (poster)<br>
-            <li>
-            <u>小野島 隆之</u>, 岡崎 由香, 北城 圭一,<br>&nbsp;
-              "TMSに対する脳波の位相応答",<br>&nbsp;
-              第2回ヒト脳イメージング研究会, 玉川大学, 町田市, 2018/9/8 (poster)<br>
-            <li>
-              <u>小野島隆之</u>, 後藤貴宏, 水原啓暁, 青柳富誌生,<br>&nbsp;
-              "位相振動子モデルを用いた異なる周波数間の結合推定",<br>&nbsp;
-              日本物理学会第73回年次大会, 東京理科大学, 野田市, 2018/3/25 (oral)<br>
-            <li>
-              <u>小野島隆之</u>,<br>&nbsp;
-              "脳波データにおける振動子間ネットワークの推定",<br>&nbsp;
-              「非線形科学とその周辺」セミナー, 京都大学, 京都市, 2016/7/7 (oral)<br>
-            <li>
-              <u>小野島 隆之</u>, 太田 絵一郎, 後藤 貴宏, 水原 啓暁, 青柳 富誌生,<br>&nbsp;
-              "脳波データにおける振動子間ネットワークの推定",<br>&nbsp;
-              第18回日本ヒト脳機能マッピング学会, 京都大学桂キャンパス, 京都市, 2016/3/7 (oral)<br>
-            <li>
-              <u>小野島 隆之</u>, 太田 絵一郎, 後藤 貴宏, 水原啓暁, 青柳富誌生,<br>&nbsp;
-              "脳波データにおける位相振動子ネットワークの推定",<br>&nbsp;
-              複雑コミュニケーションサイエンス研究会, 京都大学, 京都市, 2015/11/9 (oral)<br>
-            <li>
-               <u>小野島隆之</u>, 太田 絵一郎, 水原 啓暁, 青柳 富誌生,<br>&nbsp;
-               "脳波データからリズム間相互作用を推定する",<br>&nbsp;
-              日本物理学会第70回年次大会, 早稲田大学, 新宿, 2015/3/21 (oral)<br>
-            <li>
-              <u>小野島 隆之</u>, 北城 圭一, 水原 啓暁,<br>&nbsp;
-              "音声聴取前後の脳波位相関係により促進される音声コミュニケーション",<br>&nbsp;
-              ニューロコンピューティング研究会, 東北大学, 仙台市, 2013/11/22 (oral)<br>
-            <li>
-              <u>小野島 隆之</u>, 北城 圭一, 水原 啓暁,<br>&nbsp;
-              "刺激呈示前の脳波位相によって変化する音声聴取成績",<br>&nbsp;
-              包括脳ネットワーク夏のワークショップ, 名古屋国際会議場, 名古屋市, 2013/8/31 (poster)<br>
-            <li>
-              <u>小野島 隆之</u>, 北城 圭一, 水原 啓暁,<br>&nbsp;
-              "自発脳波位相により変化する音声聴取成績",<br>&nbsp;
-              日本認知心理学会, つくば国際会議場, つくば市, 2013/6/29 (oral)<br>
-            </ul>	
-            <h2>Awards</h2>
-            <ul>
-              <li>
-                2015年 複雑コミュニケーションサイエンス研究会 CCS奨励賞　「脳波データにおける位相振動子ネットワークの推定」 <br>&nbsp;
-                受賞者：<u>小野島 隆之</u>, 太田 絵一郎, 後藤 貴宏, 水原 啓暁, 青柳 富誌生<br>&nbsp;
-                CCS2015-47 (2015年11月)<br>
-                <br>
-              <li>
-                2012年   日本神経回路学会 最優秀研究賞 「昆虫脳における運動司令生成のための神経回路の推定」<br>&nbsp;	
-                受賞者：西川 郁子, <u>小野島 隆之</u>, 加沢 知毅, 池野 英利, 神崎 亮平<br>&nbsp;	
-                NC2011-95 (2011年12月)<br>
-            </ul>	
+    <h2>Poster &amp; Oral presentation</h2>
 
-          <hr>
+    <h3>International conference</h3>
+    <ul>
+        <li>
+            <u>Takayuki Onojima</u>, Keiichi Kitajo,<br>
+            "A Kalman filter-based method for closed-loop EEG phase-dependent visual stimulation",<br>
+            The 44th Annual Meeting of the Japan Neuroscience Society, The 1st CJK International Meeting, Kobe Convention Center, Kobe, Japan, 2021/7/30 (poster)
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Yuka Okazaki, Keiichi Kitajo,<br>
+            "A model-based approach to estimating phase response curves of TMS modulated EEG oscillations",<br>
+            Annual Meeting of the Organization for Human Brain Mapping, Auditorium Parco Della Musica, Rome, Italy, 2019/6/10 (poster)
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Yuka Okazaki, Keiichi Kitajo,<br>
+            "A manipulative approach to the phase response function of EEG oscillations by transcranial magnetic stimulation",<br>
+            3rd International Brain Stimulation Conference, Vancouver Convention Centre, Vancouver, Canada, 2019/2/25 (poster)
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi,<br>
+            "Estimating for phase interaction between rhythms of different frequency based on phase oscillator model",<br>
+            The 40th Annual Meeting of the Japan Neuroscience Society, Makuhari Messe, Chiba, Japan, 2017/7/22 (poster)
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Kaiichiro Ota, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi,<br>
+            "Estimation of multi-frequency coupling among neural oscillations",<br>
+            Cell symposia Engineering the brain, The Drake Hotel Chicago, Chicago, USA, 2015/10/15 (poster)
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara,<br>
+            "Ongoing EEG manipulates the predictive attention to speech",<br>
+            The 24th Annual Conference of the Japanese Neural Network Society, Future University Hakodate, Hakodate, Japan, 2014/8/2 (oral &amp; poster)
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara,<br>
+            "Ongoing EEG phase enhances the intelligibility of vocal communication: a simultaneous fMRI-EEG study",<br>
+            The 20th Annual Meeting of the Organization for Human Brain Mapping, CCH-Congress Center Hamburg, Hamburg, Germany, 2014/6/11 (poster)
+        </li>
+        <li>
+            <u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara,<br>
+            "Intelligibility of speech perception depends on the pre-stimulus oscillatory phase",<br>
+            Neural Oscillation Conference 2013, NINS Okazaki Conference Center, Okazaki, Japan, 2013/7/18 (poster)
+        </li>
+    </ul>
+
+    <h3><span class="lang-ja">国内学会発表</span><span class="lang-en">Domestic conference</span></h3>
+    <ul>
+        <li>
+            <span class="lang-ja">渡辺 和正, 下川 智史, 岩山 幸治, <u>小野島 隆之</u>, 田代 裕明, 上野 弘傑, 餅原 隆浩,<br>「形状生成AIと原理原則を融合したデフケースリングギヤボルト緩みサロゲートモデルの開発」,<br>自動車技術会 2025年秋季大会, 西日本総合展示場 北九州国際会議場, 北九州市, 2025/10/16（口頭）</span>
+            <span class="lang-en">Kazumasa Watanabe, Satoshi Shimokawa, Koji Iwayama, <u>Takayuki Onojima</u>, Hiroaki Tashiro, Hirotaka Ueno, Takahiro Mochihara,<br>"Development of a surrogate model for differential case ring gear bolt loosening by integrating shape-generative AI and physical principles",<br>JSAE 2025 Autumn Congress, Kitakyushu International Conference Center, Kitakyushu, Japan, 2025/10/16 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja">下川 智史, 松本 宏司, 上村 充範, 岩山 幸治, <u>小野島 隆之</u>, 今井 貴史,<br>「PINNとCVAEによる熱拡散を考慮した形状生成AI」,<br>人工知能学会全国大会（第39回）, 大阪国際会議場（グランキューブ大阪）, 大阪市, 2025/5/30（口頭）</span>
+            <span class="lang-en">Satoshi Shimokawa, Koji Matsumoto, Mitsunori Uemura, Koji Iwayama, <u>Takayuki Onojima</u>, Takashi Imai,<br>"Shape-generative AI accounting for thermal diffusion using PINN and CVAE",<br>The 39th Annual Conference of JSAI, Osaka International Convention Center, Osaka, Japan, 2025/5/30 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 神保 雅一,<br>「適応的実験計画による脳状態依存刺激法の最適化」,<br>応用統計学会 2025年度年会, 富山国際会議場, 富山市, 2025/5/17（口頭）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Masakazu Jimbo,<br>"Optimization of brain-state-dependent stimulation by adaptive experimental design",<br>2025 Annual Meeting of the Japanese Society of Applied Statistics, Toyama International Conference Center, Toyama, Japan, 2025/5/17 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 今井 貴史,<br>「深層学習を用いた脳波の解析信号の予測」,<br>情報処理学会 ヒューマンコンピュータインタラクション研究会, 芝浦工業大学・オンライン, 2024/3/13（口頭）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Takashi Imai,<br>"Deep neural network-based estimation of analytic signals for neural oscillations",<br>IPSJ SIG Human-Computer Interaction, Shibaura Institute of Technology and online, 2024/3/13 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>,<br>「音声と脳波間の同期現象」,<br>2023年度統計関連学会連合大会, 京都大学, 京都市, 2023/9/4（招待講演）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>,<br>"Synchronization between speech envelope and neural oscillation",<br>Japanese Joint Statistical Meeting 2023, Kyoto University, Kyoto, Japan, 2023/9/4 (oral &amp; invited)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 今井 貴史,<br>「グラフ深層学習による脳波状態の推定」,<br>情報処理学会 ヒューマンコンピュータインタラクション研究会, 国士舘大学・オンライン, 2023/3/15（口頭）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Takashi Imai,<br>"Graph deep learning for estimating the state of neural oscillations",<br>IPSJ SIG Human-Computer Interaction, Kokushikan University and online, 2023/3/15 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 北城 圭一,<br>「カルマンフィルタによる脳波瞬時位相の予測」,<br>生理学研究所研究会 第2回 力学系の視点からの脳・神経回路の理解, オンライン, 2020/11/26（ポスター）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Keiichi Kitajo,<br>"Prediction of instantaneous EEG phase by a Kalman filter",<br>NIPS Research Meeting: Understanding of the Brain and Neural Circuits from the Viewpoint of Dynamical Systems (2nd), online, 2020/11/26 (poster)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 岡崎 由香, 北城 圭一,<br>「TMSに対する脳波の位相応答」,<br>第2回ヒト脳イメージング研究会, 玉川大学, 町田市, 2018/9/8（ポスター）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Yuka Okazaki, Keiichi Kitajo,<br>"Phase response of EEG data induced by transcranial magnetic stimulation",<br>2nd Japanese Meeting for Human Brain Imaging, Tamagawa University, Machida, Japan, 2018/9/8 (poster)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 後藤 貴宏, 水原 啓暁, 青柳 富誌生,<br>「位相振動子モデルを用いた異なる周波数間の結合推定」,<br>日本物理学会第73回年次大会, 東京理科大学, 野田市, 2018/3/25（口頭）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi,<br>"Estimating for phase interaction between rhythms of different frequency based on phase oscillator model",<br>The 73rd Annual Meeting of the Physical Society of Japan, Tokyo University of Science, Noda, Japan, 2018/3/25 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>,<br>「脳波データにおける振動子間ネットワークの推定」,<br>「非線形科学とその周辺」セミナー, 京都大学, 京都市, 2016/7/7（口頭）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>,<br>"Estimation of oscillator networks from EEG data",<br>Seminar on Nonlinear Science and Related Topics, Kyoto University, Kyoto, Japan, 2016/7/7 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 太田 絵一郎, 後藤 貴宏, 水原 啓暁, 青柳 富誌生,<br>「脳波データにおける振動子間ネットワークの推定」,<br>第18回日本ヒト脳機能マッピング学会, 京都大学桂キャンパス, 京都市, 2016/3/7（ポスター）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Kaiichiro Ota, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi,<br>"Estimation of oscillator networks from EEG data",<br>The 18th Congress of the Japan Human Brain Mapping Society, Katsura Campus, Kyoto University, Kyoto, Japan, 2016/3/7 (poster)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 太田 絵一郎, 後藤 貴宏, 水原 啓暁, 青柳 富誌生,<br>「脳波データにおける位相振動子ネットワークの推定」,<br>複雑コミュニケーションサイエンス研究会, 京都大学, 京都市, 2015/11/9（口頭）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Kaiichiro Ota, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi,<br>"Estimation of phase oscillator network for EEG data",<br>IEICE Technical Committee on Complex Communication Sciences, Kyoto University, Kyoto, Japan, 2015/11/9 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 太田 絵一郎, 水原 啓暁, 青柳 富誌生,<br>「脳波データからリズム間相互作用を推定する」,<br>日本物理学会第70回年次大会, 早稲田大学, 新宿, 2015/3/21（口頭）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Kaiichiro Ota, Hiroaki Mizuhara, Toshio Aoyagi,<br>"Estimation of interaction functions in neural oscillator networks from EEG data",<br>The 70th Annual Meeting of the Physical Society of Japan, Waseda University, Shinjuku, Japan, 2015/3/21 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 北城 圭一, 水原 啓暁,<br>「音声聴取前後の脳波位相関係により促進される音声コミュニケーション」,<br>ニューロコンピューティング研究会, 東北大学, 仙台市, 2013/11/22（口頭）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara,<br>"Interplay of pre- and post-stimulus EEG phase enhances human vocal communication",<br>IEICE Technical Committee on Neurocomputing, Tohoku University, Sendai, Japan, 2013/11/22 (oral)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 北城 圭一, 水原 啓暁,<br>「刺激呈示前の脳波位相によって変化する音声聴取成績」,<br>包括脳ネットワーク夏のワークショップ, 名古屋国際会議場, 名古屋市, 2013/8/31（ポスター）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara,<br>"Speech intelligibility varies with the pre-stimulus EEG phase",<br>Comprehensive Brain Science Network Summer Workshop 2013, Nagoya Congress Center, Nagoya, Japan, 2013/8/31 (poster)</span>
+        </li>
+        <li>
+            <span class="lang-ja"><u>小野島 隆之</u>, 北城 圭一, 水原 啓暁,<br>「自発脳波位相により変化する音声聴取成績」,<br>日本認知心理学会, つくば国際会議場, つくば市, 2013/6/29（口頭）</span>
+            <span class="lang-en"><u>Takayuki Onojima</u>, Keiichi Kitajo, Hiroaki Mizuhara,<br>"Ongoing EEG phase modulates the intelligibility of speech perception",<br>The Japanese Society for Cognitive Psychology, Tsukuba International Congress Center, Tsukuba, Japan, 2013/6/29 (oral)</span>
+        </li>
+    </ul>
+
+    <h2><span class="lang-ja">受賞歴</span><span class="lang-en">Awards</span></h2>
+    <ul>
+        <li>
+            <span class="lang-ja">2015年　複雑コミュニケーションサイエンス研究会 CCS奨励賞<br>「脳波データにおける位相振動子ネットワークの推定」<br>受賞者：<u>小野島 隆之</u>, 太田 絵一郎, 後藤 貴宏, 水原 啓暁, 青柳 富誌生（CCS2015-47）</span>
+            <span class="lang-en">2015, CCS Encouragement Award, IEICE Technical Committee on Complex Communication Sciences<br>"Estimation of phase oscillator network for EEG data"<br>Recipients: <u>Takayuki Onojima</u>, Kaiichiro Ota, Takahiro Goto, Hiroaki Mizuhara, Toshio Aoyagi (CCS2015-47)</span>
+        </li>
+        <li>
+            <span class="lang-ja">2012年　日本神経回路学会 最優秀研究賞<br>「昆虫脳における運動司令生成のための神経回路の推定」<br>受賞者：西川 郁子, <u>小野島 隆之</u>, 加沢 知毅, 池野 英利, 神崎 亮平（NC2011-95）</span>
+            <span class="lang-en">2012, Excellent Research Award, Japanese Neural Network Society<br>"Estimation of the neural circuit for the command generation in an insect brain"<br>Recipients: Ikuko Nishikawa, <u>Takayuki Onojima</u>, Tomoki Kazawa, Hidetoshi Ikeno, Ryohei Kanzaki (NC2011-95)</span>
+        </li>
+    </ul>
+
+    <footer>
+        <span class="lang-en">Some English titles are AI-assisted translations.</span>
+        <br>&copy; Takayuki Onojima
+    </footer>
+</main>
+
+</div>
+<script src="lang.js"></script>
 </body>
 </html>

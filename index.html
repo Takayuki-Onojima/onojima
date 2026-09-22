@@ -1,142 +1,166 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="小野島隆之,小野島 隆之,小野島">
+    <meta name="keywords" content="小野島隆之,小野島 隆之,小野島,Takayuki Onojima,Onojima">
     <meta name="google-site-verification" content="EtA8TTyKfZPZ3m_OFDU46QWYFH7Tq-NcifapMX1_S4w">
 
     <title>Takayuki Onojima</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/open-fonts@1.1.1/fonts/inter.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <link rel="stylesheet" href="mypage.css">
+    <script>try{var l=localStorage.getItem('onojima-lang');if(l==='en'||l==='ja'){document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l);}}catch(e){}</script>
 </head>
 
 <body>
-<header>
-    <h1>小野島 隆之</h1>
-    博士（情報）<br>
-    滋賀大学 データサイエンス・AIイノベーション研究推進センター 講師<br>
-    <br>
+<div class="layout">
+
+<aside class="sidebar">
+    <div class="brand-name"><span class="lang-ja">小野島 隆之</span><span class="lang-en">Takayuki Onojima</span></div>
+    <div class="brand-role">
+        <span class="lang-ja">滋賀大学<br>講師</span>
+        <span class="lang-en">Shiga University<br>Lecturer</span>
+    </div>
     <nav>
-        <a href="index.html">Home</a> /
-        <a href="research.html">研究分野</a> /
-        <a href="publication.html">論文・発表</a> /
+        <a href="index.html" class="current"><span class="lang-ja">概要</span><span class="lang-en">About</span></a>
+        <a href="research.html"><span class="lang-ja">研究資金・共同研究</span><span class="lang-en">Research &amp; Funding</span></a>
+        <a href="teaching.html"><span class="lang-ja">教育・社会貢献</span><span class="lang-en">Teaching &amp; Outreach</span></a>
+        <a href="publication.html"><span class="lang-ja">論文・発表</span><span class="lang-en">Publications</span></a>
     </nav>
-    <br>
-    <div align="right"><a href="index_eng.html">English</a></div>
-</header>
+    <div class="langswitch">
+        <button type="button" data-set-lang="ja" aria-pressed="true">日本語</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    </div>
+</aside>
 
-<h2>現所属</h2>
-<ul>
-    <li>
-        2025年5月 ～ 現在<br>
-        滋賀大学 データサイエンス・AIイノベーション研究推進センター 講師
-    </li>
-    <br>
-    <li>
-        2025年6月 ～ 現在<br>
-        情報・システム研究機構 統計数理研究所<br>
-        大学統計教員育成センター 客員助教
-    </li>
-</ul>
+<main>
+    <h1 class="with-lead"><span class="lang-ja">小野島 隆之</span><span class="lang-en">Takayuki Onojima</span></h1>
+    <p class="lead">
+        <span class="lang-ja">博士（情報学）<br>滋賀大学 データサイエンス・AIイノベーション研究推進センター 講師</span>
+        <span class="lang-en">Ph.D. in Informatics<br>Lecturer, Data Science and AI Innovation Research Promotion Center, Shiga University</span>
+    </p>
 
-<h2>経歴</h2>
-<ul>
-    <li>
-        2023年4月 ～ 2026年3月<br>
-        自然科学研究機構 生理学研究所<br>
-        神経ダイナミクス研究部門 共同利用研究員
-    </li>
-    <li>
-        2022年4月 ～ 2025年4月<br>
-        滋賀大学 データサイエンス・AIイノベーション研究推進センター 助教
-    </li>
-    <li>
-        2023年4月 ～ 2025年3月<br>
-        情報・システム研究機構 統計数理研究所<br>
-        大学統計教員育成センター 外来研究員<br>
-        （大学統計教員育成研修 第2期）
-    </li>
-    <li>
-        2022年4月 ～ 2023年3月<br>
-        自然科学研究機構 生理学研究所<br>
-        神経ダイナミクス研究部門 特別訪問研究員
-    </li>
-    <li>
-        2019年4月 ～ 2022年3月<br>
-        理化学研究所 脳神経科学研究センター 基礎科学特別研究員
-    </li>
-    <li>
-        2018年4月 ～ 2019年3月<br>
-        理化学研究所 脳神経科学研究センター 研究員
-    </li>
-    <li>
-        2015年4月 ～ 2017年3月<br>
-        日本学術振興会 特別研究員 DC2（京都大学）
-    </li>
-</ul>
+    <h2><span class="lang-ja">主要な業績</span><span class="lang-en">Selected work</span></h2>
+    <ul>
+        <li>
+            <span class="lang-ja"><b>脳波位相と正答確率の関数推定に向けたロジット変換を用いたガウス過程回帰</b><br>
+            小野島 隆之，神保 雅一．<i>統計数理</i>, 74(1), 61-80（2026）<br>
+            脳波位相と正答確率の関係を、ロジット変換と周期カーネルを用いたガウス過程回帰によって推定する統計モデルを提案。被験者ごとに柔軟に推定でき、試行数の増加に伴う計算量の問題に対処する二項・ロジットモデルも新たに導入した。</span>
+            <span class="lang-en"><b>Gaussian Process Regression with a Logit Link to Estimate the Relationship between Neural Oscillatory Phase and the Probability of a Correct Response</b><br>
+            Takayuki Onojima, Masakazu Jimbo. <i>Proceedings of the Institute of Statistical Mathematics</i>, 74(1), 61-80 (2026)<br>
+            A statistical model that estimates the relationship between EEG phase and response accuracy by Gaussian process regression with a logit link and a periodic kernel, together with a binomial-logit formulation that keeps the computation tractable as the number of trials grows.</span>
+        </li>
+        <li>
+            <span class="lang-ja"><b>High-resolution EEG dataset during resting and localized visual stimulation in the lower-left visual field</b><br>
+            小野島 隆之，北城 圭一．<i>Data in Brief</i>, 64C, 112400（2026）<br>
+            安静時および左下視野への局所的な視覚刺激時に記録した高密度脳波データセットを公開したデータ論文。</span>
+            <span class="lang-en"><b>High-resolution EEG dataset during resting and localized visual stimulation in the lower-left visual field</b><br>
+            Takayuki Onojima, Keiichi Kitajo. <i>Data in Brief</i>, 64C, 112400 (2026)<br>
+            A data paper releasing a high-resolution EEG dataset recorded during rest and during localized visual stimulation in the lower-left visual field.</span>
+        </li>
+        <li>
+            <span class="lang-ja"><b>A state-informed stimulation approach with real-time estimation of the instantaneous phase of neural oscillations by a Kalman filter</b><br>
+            小野島 隆之，北城 圭一．<i>Journal of Neural Engineering</i>, 18(6), 066001（2021）<br>
+            カルマンフィルタにより脳波の瞬時位相をリアルタイムに推定し、目標とする位相のタイミングで刺激を呈示する脳状態依存刺激法を提案。リアルタイム環境に実装して実験的に検証した。</span>
+            <span class="lang-en"><b>A state-informed stimulation approach with real-time estimation of the instantaneous phase of neural oscillations by a Kalman filter</b><br>
+            Takayuki Onojima, Keiichi Kitajo. <i>Journal of Neural Engineering</i>, 18(6), 066001 (2021)<br>
+            A proposed brain-state-dependent stimulation method that estimates the instantaneous phase of neural oscillations in real time with a Kalman filter and delivers stimuli at a targeted phase, implemented and validated experimentally in a real-time setting.</span>
+        </li>
+    </ul>
 
-<h2>共同研究・競争的資金等</h2>
-<ul>
-    <li>
-        2024年4月 ～ 2027年3月<br>
-        日本学術振興会 科学研究費助成事業 若手研究（2回目）<br>
-        「人間の脳活動における振動現象の抽出と機能的役割の解明」<br>
-        代表：小野島 隆之
-    </li>
-    <li>
-        2023年4月 ～ 2026年3月<br>
-        自然科学研究機構 生理学研究所 共同利用研究（一般共同研究）<br>
-        「脳波位相依存刺激手法の構築と周期的な脳活動の役割に関する研究」<br>
-        代表：小野島 隆之
-    </li>
-    <li>
-        2020年4月 ～ 2024年3月<br>
-        日本学術振興会 科学研究費助成事業 若手研究（1回目）<br>
-        「頭皮脳波の力学的性質に関する研究」<br>
-        代表：小野島 隆之
-    </li>
-    <li>
-        2019年4月 ～ 2022年3月<br>
-        理化学研究所 基礎科学特別研究員制度（SPDR）<br>
-        「非侵襲脳刺激により解明する脳波同期の機能的役割」<br>
-        代表：小野島 隆之
-    </li>
-    <li>
-        2018年9月 ～ 2020年3月<br>
-        日本学術振興会 科学研究費助成事業 研究活動スタート支援<br>
-        「経頭蓋磁気刺激法で解明する神経振動子の認知機能への影響」<br>
-        代表：小野島 隆之
-    </li>
-    <li>
-        2015年4月 ～ 2017年3月<br>
-        日本学術振興会 科学研究費助成事業 特別研究員奨励費（DC2）<br>
-        「位相振動子モデルにより解明する脳波協調の神経計算論」<br>
-        代表：小野島 隆之
-    </li>
-</ul>
+    <h2><span class="lang-ja">現所属</span><span class="lang-en">Current Positions</span></h2>
+    <ul>
+        <li>
+            <span class="lang-ja">2025年5月 ～ 現在<br>滋賀大学 データサイエンス・AIイノベーション研究推進センター 講師</span>
+            <span class="lang-en">May 2025 – Present<br>Lecturer, Data Science and AI Innovation Research Promotion Center, Shiga University</span>
+        </li>
+        <li>
+            <span class="lang-ja">2025年6月 ～ 現在<br>情報・システム研究機構 統計数理研究所<br>大学統計教員育成センター 客員講師</span>
+            <span class="lang-en">June 2025 – Present<br>Visiting Lecturer, Center for University Statistics Education,<br>The Institute of Statistical Mathematics</span>
+        </li>
+    </ul>
 
-<h2>学位</h2>
-<ul>
-    <li>
-        2018年3月<br>
-        京都大学 大学院情報学研究科 先端数理科学専攻 博士課程 修了<br>
-        博士論文：A study on the dynamical role of EEG phase for speech recognition
-    </li>
-    <br>
-    <li>
-        2014年3月<br>
-        京都大学 大学院情報学研究科 知能情報学専攻 修士課程 修了<br>
-        修士論文：脳波位相が影響を与える音声知覚の明瞭さに関する神経基盤
-    </li>
-</ul>
+    <h2><span class="lang-ja">経歴（本務）</span><span class="lang-en">Employment</span></h2>
+    <ul>
+        <li>
+            <span class="lang-ja">2022年4月 ～ 2025年4月<br>滋賀大学 データサイエンス・AIイノベーション研究推進センター 助教</span>
+            <span class="lang-en">April 2022 – April 2025<br>Assistant Professor, Data Science and AI Innovation Research Promotion Center, Shiga University</span>
+        </li>
+        <li>
+            <span class="lang-ja">2019年4月 ～ 2022年3月<br>理化学研究所 脳神経科学研究センター 基礎科学特別研究員</span>
+            <span class="lang-en">April 2019 – March 2022<br>Special Postdoctoral Researcher (SPDR), RIKEN Center for Brain Science</span>
+        </li>
+        <li>
+            <span class="lang-ja">2018年4月 ～ 2019年3月<br>理化学研究所 脳神経科学研究センター 研究員</span>
+            <span class="lang-en">April 2018 – March 2019<br>Postdoctoral Researcher, RIKEN Center for Brain Science</span>
+        </li>
+        <li>
+            <span class="lang-ja">2015年4月 ～ 2017年3月<br>日本学術振興会 特別研究員 DC2（京都大学）</span>
+            <span class="lang-en">April 2015 – March 2017<br>JSPS Research Fellow (DC2), Graduate School of Informatics, Kyoto University</span>
+        </li>
+    </ul>
 
-<h2>連絡先</h2>
-〒522-8522 滋賀県彦根市馬場1-1-1<br>
-滋賀大学 データサイエンス・AIイノベーション研究推進センター<br><br>
-<img src="mailaddress_shiga.jpg" alt="mail address"><br>
+    <h2><span class="lang-ja">兼任・客員等</span><span class="lang-en">Concurrent &amp; Visiting Appointments</span></h2>
+    <ul>
+        <li>
+            <span class="lang-ja">2024年4月 ～ 2024年9月<br>総合研究大学院大学 非常勤講師</span>
+            <span class="lang-en">April 2024 – September 2024<br>Adjunct Lecturer, The Graduate University for Advanced Studies (SOKENDAI)</span>
+        </li>
+        <li>
+            <span class="lang-ja">2023年4月 ～ 2026年3月<br>自然科学研究機構 生理学研究所<br>神経ダイナミクス研究部門 共同利用研究員</span>
+            <span class="lang-en">April 2023 – March 2026<br>Collaborative Researcher, Division of Neural Dynamics,<br>National Institute for Physiological Sciences</span>
+        </li>
+        <li>
+            <span class="lang-ja">2023年4月 ～ 2025年3月<br>情報・システム研究機構 統計数理研究所<br>統計エキスパート人材育成プロジェクト 第2期研修 研修生</span>
+            <span class="lang-en">April 2023 – March 2025<br>Trainee, Statistical Expert Human Resource Development Project (Phase II),<br>The Institute of Statistical Mathematics</span>
+        </li>
+        <li>
+            <span class="lang-ja">2023年4月 ～ 2025年3月<br>情報・システム研究機構 統計数理研究所<br>大学統計教員育成センター 外来研究員</span>
+            <span class="lang-en">April 2023 – March 2025<br>Visiting Researcher, Center for University Statistics Education,<br>The Institute of Statistical Mathematics</span>
+        </li>
+        <li>
+            <span class="lang-ja">2022年4月 ～ 2023年3月<br>自然科学研究機構 生理学研究所<br>神経ダイナミクス研究部門 特別訪問研究員</span>
+            <span class="lang-en">April 2022 – March 2023<br>Visiting Researcher, Division of Neural Dynamics,<br>National Institute for Physiological Sciences</span>
+        </li>
+    </ul>
 
-<hr>
+    <h2><span class="lang-ja">学位</span><span class="lang-en">Education</span></h2>
+    <ul>
+        <li>
+            <span class="lang-ja">2018年3月　博士（情報学）<br>京都大学 大学院情報学研究科 先端数理科学専攻 博士課程 修了<br>博士論文：<i>A study on the dynamical role of EEG phase for speech recognition</i></span>
+            <span class="lang-en">March 2018　Ph.D. in Informatics<br>Graduate School of Informatics, Kyoto University<br>Doctoral thesis: <i>A study on the dynamical role of EEG phase for speech recognition</i></span>
+        </li>
+        <li>
+            <span class="lang-ja">2014年3月　修士（情報学）<br>京都大学 大学院情報学研究科 知能情報学専攻 修士課程 修了<br>修士論文：<i>Neural substrates of EEG phase effect on the intelligibility of speech perception</i></span>
+            <span class="lang-en">March 2014　M.Sc. in Informatics<br>Graduate School of Informatics, Kyoto University<br>Master's thesis: <i>Neural substrates of EEG phase effect on the intelligibility of speech perception</i></span>
+        </li>
+    </ul>
+
+    <h2><span class="lang-ja">所属学会</span><span class="lang-en">Scientific Society Memberships</span></h2>
+    <ul class="societies">
+        <li><span class="lang-ja">日本神経科学学会</span><span class="lang-en">The Japan Neuroscience Society</span></li>
+        <li><span class="lang-ja">日本物理学会</span><span class="lang-en">The Physical Society of Japan</span></li>
+        <li><span class="lang-ja">情報処理学会</span><span class="lang-en">Information Processing Society of Japan</span></li>
+        <li><span class="lang-ja">人工知能学会</span><span class="lang-en">The Japanese Society for Artificial Intelligence</span></li>
+        <li>Organization for Human Brain Mapping</li>
+        <li>Society for Neuroscience</li>
+    </ul>
+
+    <h2><span class="lang-ja">連絡先</span><span class="lang-en">Contact</span></h2>
+    <div class="contact">
+        <span class="lang-ja">〒522-8522 滋賀県彦根市馬場1-1-1<br>滋賀大学 データサイエンス・AIイノベーション研究推進センター</span>
+        <span class="lang-en">1-1-1 Banba, Hikone, Shiga 522-8522, Japan<br>Data Science and AI Innovation Research Promotion Center, Shiga University</span>
+        <br>
+        <img src="mailaddress_shiga.jpg" alt="mail address">
+    </div>
+
+    <footer>
+        <span class="lang-en">Some English titles are AI-assisted translations.</span>
+        <br>&copy; Takayuki Onojima
+    </footer>
+</main>
+
+</div>
+<script src="lang.js"></script>
 </body>
 </html>

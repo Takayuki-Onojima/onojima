@@ -1,89 +1,105 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Takayuki Onojima | Research</title>
+    <title>Takayuki Onojima | Research &amp; Funding</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/open-fonts@1.1.1/fonts/inter.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <link rel="stylesheet" href="mypage.css">
+    <script>try{var l=localStorage.getItem('onojima-lang');if(l==='en'||l==='ja'){document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l);}}catch(e){}</script>
 </head>
 
 <body>
-<header>
-    <h1>小野島 隆之</h1>
-    博士（情報）<br>
-    滋賀大学 データサイエンス・AIイノベーション研究推進センター 講師<br>
-    <br>
+<div class="layout">
+
+<aside class="sidebar">
+    <div class="brand-name"><span class="lang-ja">小野島 隆之</span><span class="lang-en">Takayuki Onojima</span></div>
+    <div class="brand-role">
+        <span class="lang-ja">滋賀大学<br>講師</span>
+        <span class="lang-en">Shiga University<br>Lecturer</span>
+    </div>
     <nav>
-        <a href="index.html">Home</a> /
-        <a href="research.html">研究分野</a> /
-        <a href="publication.html">論文・発表</a> /
+        <a href="index.html"><span class="lang-ja">概要</span><span class="lang-en">About</span></a>
+        <a href="research.html" class="current"><span class="lang-ja">研究資金・共同研究</span><span class="lang-en">Research &amp; Funding</span></a>
+        <a href="teaching.html"><span class="lang-ja">教育・社会貢献</span><span class="lang-en">Teaching &amp; Outreach</span></a>
+        <a href="publication.html"><span class="lang-ja">論文・発表</span><span class="lang-en">Publications</span></a>
     </nav>
-    <br>
-    <div align="right"><a href="research_eng.html">English</a></div>
-</header>
+    <div class="langswitch">
+        <button type="button" data-set-lang="ja" aria-pressed="true">日本語</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    </div>
+</aside>
 
-<h2>キーワード</h2>
-脳波（EEG），脳状態依存刺激，神経振動，位相ダイナミクス，  
-適応的実験計画，ベイズ最適化，統計モデリング，  
-リアルタイム信号処理，深層学習，Human-in-the-loop
-<hr>
+<main>
+    <h1><span class="lang-ja">共同研究・競争的資金等</span><span class="lang-en">Research Projects &amp; Competitive Funding</span></h1>
 
-<h2>現在の研究テーマ</h2>
-<ul>
-    <li>
-        脳波状態に基づく <b>適応的・リアルタイム刺激法（脳状態依存刺激法）</b> の開発
-    </li>
-    <li>
-        脳波位相と行動応答（正答率・反応時間）の関係を記述する
-        <b>統計モデル・階層ベイズモデル</b>の構築
-    </li>
-    <li>
-        <b>ベイズ最適化</b>を用いた少数試行での最適刺激条件推定
-        （適応的実験計画）
-    </li>
-    <li>
-        深層学習による脳波の解析信号・脳状態の
-        <b>リアルタイム推定・予測</b>
-    </li>
-    <li>
-        人間を制御ループ内に含む
-        <b>Human-in-the-loop 型神経刺激・AI制御系</b>の構築
-    </li>
-</ul>
+    <h2><span class="lang-ja">学術機関</span><span class="lang-en">Academic Institutions</span></h2>
+    <ul>
+        <li>
+            <span class="lang-ja">2025年4月 ～ 2027年3月<br>情報・システム研究機構 データサイエンス共同利用基盤施設 特別研修<br>「脳状態依存刺激法のための統計モデル構築と適応的実験計画による最適化」<br>代表：小野島 隆之（メンター：神保 雅一）</span>
+            <span class="lang-en">April 2025 – March 2027<br>Research Organization of Information and Systems,<br>Joint Support-Center for Data Science Research, Special Training Program<br><i>Statistical modeling for brain-state-dependent stimulation and its optimization by adaptive experimental design</i><br>Principal Investigator: Takayuki Onojima (Mentor: Masakazu Jimbo)</span>
+        </li>
+        <li>
+            <span class="lang-ja">2024年4月 ～ 2027年3月<br>日本学術振興会 科学研究費助成事業 若手研究（2回目）<br>「人間の脳活動における振動現象の抽出と機能的役割の解明」<br>代表：小野島 隆之</span>
+            <span class="lang-en">April 2024 – March 2027<br>JSPS KAKENHI, Grant-in-Aid for Early-Career Scientists (2nd term)<br><i>Extracting oscillatory phenomena in human brain activity and their functional roles</i><br>Principal Investigator: Takayuki Onojima</span>
+        </li>
+        <li>
+            <span class="lang-ja">2023年4月 ～ 2026年3月<br>自然科学研究機構 生理学研究所 共同利用研究（一般共同研究）<br>「脳波位相依存刺激手法の構築と周期的な脳活動の役割に関する研究」<br>代表：小野島 隆之</span>
+            <span class="lang-en">April 2023 – March 2026<br>National Institute for Physiological Sciences, Joint Research Program<br><i>Phase-dependent EEG stimulation methods and functional roles of periodic brain activity</i><br>Principal Investigator: Takayuki Onojima</span>
+        </li>
+        <li>
+            <span class="lang-ja">2023年4月 ～ 2024年3月<br>滋賀大学 研究スタートアップ助成事業<br>「人の脳活動に対する機械学習を用いた解析手法に関する研究」<br>代表：小野島 隆之</span>
+            <span class="lang-en">April 2023 – March 2024<br>Shiga University, Research Start-up Grant Program<br><i>Machine-learning-based analysis methods for human brain activity</i><br>Principal Investigator: Takayuki Onojima</span>
+        </li>
+        <li>
+            <span class="lang-ja">2020年4月 ～ 2024年3月<br>日本学術振興会 科学研究費助成事業 若手研究（1回目）<br>「頭皮脳波の力学的性質に関する研究」<br>代表：小野島 隆之</span>
+            <span class="lang-en">April 2020 – March 2024<br>JSPS KAKENHI, Grant-in-Aid for Early-Career Scientists (1st term)<br><i>Dynamical properties of human scalp EEG</i><br>Principal Investigator: Takayuki Onojima</span>
+        </li>
+        <li>
+            <span class="lang-ja">2019年4月 ～ 2022年3月<br>理化学研究所 基礎科学特別研究員制度（SPDR）<br>「非侵襲脳刺激により解明する脳波同期の機能的役割」<br>代表：小野島 隆之</span>
+            <span class="lang-en">April 2019 – March 2022<br>RIKEN Special Postdoctoral Researchers Program (SPDR)<br><i>Functional roles of neural synchronization revealed by non-invasive brain stimulation</i><br>Principal Investigator: Takayuki Onojima</span>
+        </li>
+        <li>
+            <span class="lang-ja">2018年9月 ～ 2020年3月<br>日本学術振興会 科学研究費助成事業 研究活動スタート支援<br>「経頭蓋磁気刺激法で解明する神経振動子の認知機能への影響」<br>代表：小野島 隆之</span>
+            <span class="lang-en">September 2018 – March 2020<br>JSPS KAKENHI, Grant-in-Aid for Research Activity Start-up<br><i>Effects of transcranial magnetic stimulation on cognitive functions of neural oscillators</i><br>Principal Investigator: Takayuki Onojima</span>
+        </li>
+        <li>
+            <span class="lang-ja">2015年4月 ～ 2017年3月<br>日本学術振興会 科学研究費助成事業 特別研究員奨励費（DC2）<br>「位相振動子モデルにより解明する脳波協調の神経計算論」<br>代表：小野島 隆之</span>
+            <span class="lang-en">April 2015 – March 2017<br>JSPS KAKENHI, Research Fellowship for Young Scientists (DC2)<br><i>Neural computations underlying EEG coordination revealed by phase oscillator models</i><br>Principal Investigator: Takayuki Onojima</span>
+        </li>
+    </ul>
 
-<h2>これまでの研究テーマ</h2>
-<ul>
-    <li>
-        自発脳波位相に依存した視覚・聴覚刺激提示実験
-    </li>
-    <li>
-        カルマンフィルタと振動子モデルを用いた
-        脳波瞬時位相のリアルタイム推定
-    </li>
-    <li>
-        脳波位相依存刺激（closed-loop EEG stimulation）システムの構築
-    </li>
-    <li>
-        位相振動子モデルに基づく
-        脳波リズム間相互作用（結合関数）の推定
-    </li>
-    <li>
-        脳波位相と音声知覚・注意・認知機能との関係解析
-    </li>
-</ul>
+    <h2><span class="lang-ja">民間企業</span><span class="lang-en">Industry Collaborations</span></h2>
+    <ul>
+        <li>
+            <span class="lang-ja">2025年11月 ～ 2026年3月<br>第一工業製薬株式会社「化学データを活用した課題解決」</span>
+            <span class="lang-en">November 2025 – March 2026<br>DKS Co. Ltd., <i>Problem solving using chemical data</i></span>
+        </li>
+        <li>
+            <span class="lang-ja">2025年6月 ～ 2026年3月<br>トヨタ自動車株式会社「形状生成AI技術の開発」</span>
+            <span class="lang-en">June 2025 – March 2026<br>Toyota Motor Corporation, <i>Development of generative AI technology for shape design</i></span>
+        </li>
+        <li>
+            <span class="lang-ja">2024年6月 ～ 2025年3月<br>トヨタ自動車株式会社「形状生成AI技術の開発」</span>
+            <span class="lang-en">June 2024 – March 2025<br>Toyota Motor Corporation, <i>Development of generative AI technology for shape design</i></span>
+        </li>
+        <li>
+            <span class="lang-ja">2022年9月 ～ 2023年3月<br>株式会社アイシン「品質不良と製造条件の因果探索技術の研究開発」</span>
+            <span class="lang-en">September 2022 – March 2023<br>AISIN Corporation, <i>Causal discovery for quality defects and manufacturing conditions</i></span>
+        </li>
+        <li>
+            <span class="lang-ja">2022年7月 ～ 2023年3月<br>株式会社デンソー「機器の稼働データ故障要因分析」</span>
+            <span class="lang-en">July 2022 – March 2023<br>DENSO Corporation, <i>Failure factor analysis of equipment operation data</i></span>
+        </li>
+    </ul>
 
-<h2>所属学会</h2>
-<ul>
-    <li>日本神経科学学会</li>
-    <li>日本物理学会</li>
-    <li>日本ヒト脳機能マッピング学会</li>
-    <li>情報処理学会</li>
-    <li>Society for Neuroscience</li>
-    <li>Organization for Human Brain Mapping</li>
-</ul>
+    <footer>
+        <span class="lang-en">Some English titles are AI-assisted translations.</span>
+        <br>&copy; Takayuki Onojima
+    </footer>
+</main>
 
-<hr>
+</div>
+<script src="lang.js"></script>
 </body>
 </html>
